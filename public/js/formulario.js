@@ -4,10 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!form || !mensaje) return;
 
+  // Validación simple antes de enviar
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const datos = new FormData(form);
+
+    // Validar que el campo "nombre" no esté vacío 
+    if (!datos.get("nombre") || datos.get("nombre").trim() === "") {
+      alert("Por favor, introduce tu nombre.");
+      return;
+    }
 
     fetch(form.action, {
       method: "POST",
@@ -27,4 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Error en la conexión.");
       });
   });
+
+  // Animar un texto principal en las propiedades
+  const titulo = document.querySelector("h1");
+  if (titulo) {
+    titulo.style.opacity = 0;
+    titulo.style.transition = "opacity 2s ease-in";
+    setTimeout(() => {
+      titulo.style.opacity = 1;
+    }, 100);
+  }
 });
+

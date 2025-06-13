@@ -14,14 +14,14 @@ class Usuario {
         $this->password = $data['password'] ?? '';
     }
 
-    // Método para validar usuario en la BD (ejemplo simulado)
+    // Método para validar usuario en la BD con ejemplo simulado
     public static function validarUsuario($email, $password) {
-        // Simulación de usuario para prueba
+        // Simulación de usuario prueba
         $usuarioEjemplo = new Usuario([
             'id' => 1,
             'nombre' => 'Admin',
             'email' => 'admin@ecoviviendas.com',
-            'password' => password_hash('admin123', PASSWORD_DEFAULT) // Contraseña encriptada
+            'password' => password_hash('admin123', PASSWORD_DEFAULT)
         ]);
 
         // Validar email y password
