@@ -20,7 +20,6 @@ if (!$propiedad) {
 ?>
 
 <main id="detalle-propiedad" class="container">
-  <script src="/ecoviviendas/public/js/formulario.js" defer></script>
   <div class="detalle-contenido">
     <h1 class="titulo-detalle"><?= htmlspecialchars($propiedad->titulo) ?></h1>
 

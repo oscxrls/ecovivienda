@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="/ecoviviendas/public/js/formulario.js" defer></script>
     <meta charset="UTF-8">
     <title>Ecoviviendas</title>
     <link rel="icon" href="/ecoviviendas/public/img/icons/favicon.ico" type="image/x-icon">
