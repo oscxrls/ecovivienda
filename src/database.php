@@ -6,7 +6,7 @@ use PDOException;
 
 class Database {
     private $host = '127.0.0.1';
-    private $port = 3307;        // El puerto 
+    private $port = 3307;        // El puerto a utilizar, por defecto es 3306, pero aquí se usa 3307
     private $dbname = 'ecoviviendas';
     private $username = 'root';
     private $password = '';
